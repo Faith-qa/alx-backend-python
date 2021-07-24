@@ -4,6 +4,7 @@ using mypi to validate this piece of code
 """
 from typing import Tuple, List, Any
 
+
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """return zoomed_in"""
     zoomed_in: List = [
