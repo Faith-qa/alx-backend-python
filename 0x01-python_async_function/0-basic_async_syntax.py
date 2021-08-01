@@ -1,7 +1,5 @@
-#!/usr/bin/bash/env python3
-"""
-coroutines in asyncio
-"""
+#!/usr/bin/env python3
+"""Coroutine that takes delays """
 
 import asyncio
 import random
@@ -9,10 +7,8 @@ import random
 
 async def wait_random(max_delay: int = 10) -> float:
     """
-    an asynchronous coroutine task that takes an integer
-    argument that waits for a random delay between 0 and
-    max_delay seconds and eventually returns it
-
+    max_delay - await time
+    Return the delay time
     """
     delay: float = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
